@@ -1,0 +1,16 @@
+.admin-shell {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  min-height: 100vh;
+}
+
+.admin-main {
+  min-width: 0;
+  padding: 18px;
+}
+
+@media (max-width: 992px) {
+  .admin-shell {
+    display: block;
+  }
+}

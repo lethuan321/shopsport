@@ -1,0 +1,86 @@
+.auth-field {
+  position: relative;
+}
+
+.auth-input {
+  min-height: 56px;
+  padding: 1.25rem 1rem .55rem;
+  border: 1px solid rgba(148, 163, 184, .28);
+  border-radius: 18px;
+  color: var(--color-text, #1e293b);
+  background: rgba(255, 255, 255, .72);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .45);
+  transition: border-color 220ms ease, box-shadow 220ms ease, background 220ms ease;
+}
+
+.auth-input:focus {
+  border-color: rgba(37, 99, 235, .55);
+  background: rgba(255, 255, 255, .9);
+  box-shadow: 0 0 0 .25rem rgba(37, 99, 235, .12), 0 16px 40px rgba(37, 99, 235, .08);
+}
+
+.auth-label {
+  position: absolute;
+  top: .92rem;
+  left: 1rem;
+  z-index: 2;
+  color: var(--color-muted, #475569);
+  font-size: .94rem;
+  pointer-events: none;
+  transition: transform 180ms ease, font-size 180ms ease, color 180ms ease;
+}
+
+.auth-input:focus + .auth-label,
+.auth-input:not(:placeholder-shown) + .auth-label {
+  color: #2563eb;
+  font-size: .76rem;
+  transform: translateY(-.55rem);
+}
+
+.auth-input.is-valid {
+  border-color: rgba(34, 197, 94, .7);
+}
+
+.auth-input.is-invalid {
+  border-color: rgba(239, 68, 68, .7);
+}
+
+.password-toggle {
+  position: absolute;
+  top: 50%;
+  right: .8rem;
+  z-index: 3;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  border-radius: 50%;
+  color: #475569;
+  background: transparent;
+  transform: translateY(-50%);
+}
+
+.password-toggle:hover {
+  color: #2563eb;
+  background: rgba(37, 99, 235, .08);
+}
+
+.otp-input {
+  width: 52px;
+  height: 58px;
+  border: 1px solid rgba(148, 163, 184, .35);
+  border-radius: 18px;
+  color: var(--color-text, #1e293b);
+  background: rgba(255, 255, 255, .76);
+  font-size: 1.35rem;
+  font-weight: 900;
+  text-align: center;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.otp-input:focus {
+  border-color: rgba(37, 99, 235, .62);
+  box-shadow: 0 0 0 .25rem rgba(37, 99, 235, .12);
+  transform: translateY(-2px);
+}

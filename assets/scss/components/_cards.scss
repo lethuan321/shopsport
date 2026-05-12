@@ -1,0 +1,9 @@
+.ds-card {
+  border-radius: $radius-lg;
+  @include glass-surface;
+  transition: transform $transition, box-shadow $transition;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}

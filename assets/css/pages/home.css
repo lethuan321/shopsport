@@ -1,0 +1,19 @@
+.hero__title {
+  text-wrap: balance;
+}
+
+.home-section {
+  scroll-margin-top: 96px;
+}
+
+.home-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .hero__title {
+    max-width: 12ch;
+  }
+}

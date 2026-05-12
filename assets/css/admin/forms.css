@@ -1,0 +1,57 @@
+.admin-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.admin-label {
+  color: var(--admin-muted);
+  font-size: .88rem;
+  font-weight: 800;
+}
+
+.admin-input,
+.admin-select,
+.admin-textarea {
+  min-height: 46px;
+  border: 1px solid var(--admin-border);
+  border-radius: 14px;
+  color: var(--admin-text);
+  background: rgba(255, 255, 255, .06);
+}
+
+.admin-input:focus,
+.admin-select:focus,
+.admin-textarea:focus {
+  color: var(--admin-text);
+  border-color: rgba(37, 99, 235, .52);
+  background: rgba(255, 255, 255, .08);
+  box-shadow: 0 0 0 .25rem rgba(37, 99, 235, .12);
+}
+
+.admin-input::placeholder,
+.admin-textarea::placeholder {
+  color: rgba(148, 163, 184, .78);
+}
+
+.upload-zone {
+  display: grid;
+  place-items: center;
+  min-height: 220px;
+  border: 1px dashed rgba(148, 163, 184, .42);
+  border-radius: var(--admin-radius);
+  background: rgba(255, 255, 255, .04);
+  text-align: center;
+  transition: border-color var(--admin-transition), background var(--admin-transition);
+}
+
+.upload-zone.is-dragover,
+.upload-zone:hover {
+  border-color: rgba(37, 99, 235, .62);
+  background: rgba(37, 99, 235, .10);
+}
+
+.upload-preview {
+  max-height: 180px;
+  border-radius: 18px;
+  object-fit: cover;
+}

@@ -1,0 +1,7 @@
+﻿[
+  { "id": 1, "name": "Giày", "slug": "shoes", "icon": "bi-lightning" },
+  { "id": 2, "name": "Trang phục", "slug": "apparel", "icon": "bi-person-standing" },
+  { "id": 3, "name": "Phụ kiện", "slug": "accessories", "icon": "bi-smartwatch" },
+  { "id": 4, "name": "Thiết bị", "slug": "equipment", "icon": "bi-trophy" }
+]
+

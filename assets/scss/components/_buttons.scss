@@ -1,0 +1,16 @@
+.ds-btn {
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+.ds-btn--primary {
+  color: #fff;
+  background: linear-gradient(135deg, $primary, $primary-700);
+}

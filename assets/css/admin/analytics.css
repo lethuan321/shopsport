@@ -1,0 +1,29 @@
+.analytics-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.analytics-summary .admin-card {
+  min-height: 132px;
+}
+
+.analytics-trend {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  color: var(--admin-success);
+  font-weight: 800;
+}
+
+@media (max-width: 991.98px) {
+  .analytics-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .analytics-summary {
+    grid-template-columns: 1fr;
+  }
+}
