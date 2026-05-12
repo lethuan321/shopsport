@@ -1,0 +1,21 @@
+[data-shop-grid] {
+  min-height: 320px;
+}
+
+.shop-filter-panel {
+  position: sticky;
+  top: 96px;
+}
+
+.shop-pagination {
+  display: flex;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 991.98px) {
+  .shop-filter-panel {
+    position: static;
+  }
+}

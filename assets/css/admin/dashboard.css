@@ -1,0 +1,29 @@
+.traffic-grid {
+  display: grid;
+  gap: .8rem;
+}
+
+.traffic-item {
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  align-items: center;
+  gap: .8rem;
+}
+
+.traffic-bar {
+  height: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, .18);
+}
+
+.traffic-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #2563eb, #38bdf8);
+}
+
+.traffic-bar--36 span { width: 36%; }
+.traffic-bar--48 span { width: 48%; }
+.traffic-bar--72 span { width: 72%; }

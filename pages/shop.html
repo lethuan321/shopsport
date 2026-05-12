@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sport Store cung cấp giao diện ecommerce thể thao hiện đại, responsive, dễ sử dụng và tối ưu trải nghiệm.">
+  <meta property="og:title" content="Sport Store | Cửa hàng">
+  <meta property="og:description" content="Sport Store cung cấp giao diện ecommerce thể thao hiện đại, responsive, dễ sử dụng và tối ưu trải nghiệm.">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sport Store">
+  <title>Sport Store | Cửa hàng</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/custom/style.css">
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg app-navbar"><div class="container"><a class="navbar-brand d-flex align-items-center gap-2" href="index.html"><span class="brand-mark"><i class="bi bi-lightning-charge-fill"></i></span>Sport Store</a><button class="navbar-toggler icon-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"><i class="bi bi-list"></i></button><div class="collapse navbar-collapse" id="mainNav"><ul class="navbar-nav mx-auto gap-lg-3"><li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li><li class="nav-item"><a class="nav-link active" href="shop.html">Cửa hàng</a></li><li class="nav-item"><a class="nav-link" href="about.html">Giới thiệu</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li></ul><div class="d-flex gap-2"><button class="icon-btn" data-theme-toggle type="button"><i class="bi bi-moon-stars"></i></button><a class="icon-btn position-relative" href="wishlist.html"><i class="bi bi-heart"></i><span class="badge rounded-pill text-bg-primary position-absolute top-0 start-100 translate-middle" data-wishlist-count>0</span></a><a class="icon-btn position-relative" href="cart.html"><i class="bi bi-bag"></i><span class="badge rounded-pill text-bg-primary position-absolute top-0 start-100 translate-middle" data-cart-count>0</span></a></div></div></div></nav>
+  <main>
+    <section class="page-hero"><div class="container" data-aos="fade-up"><p class="section__eyebrow">Cửa hàng</p><h1 class="section__title display-4">Sản phẩm thể thao cao cấp.</h1><p class="section__text col-lg-7">Tìm kiếm, lọc và sắp xếp đồ thể thao với thẻ sản phẩm mượt và ảnh tải lười.</p></div></section>
+    <section class="section--compact"><div class="container">
+      <div class="glass-card p-3 p-lg-4 mb-4" data-aos="fade-up"><div class="row g-3"><div class="col-md-5"><input class="form-control" data-search type="search" placeholder="Tìm sản phẩm" aria-label="Tìm sản phẩm"></div><div class="col-md-4"><select class="form-select" data-category><option value="all">Tất cả danh mục</option><option>Giày</option><option>Trang phục</option><option>Phụ kiện</option><option>Thiết bị</option></select></div><div class="col-md-3"><select class="form-select" data-sort><option value="rating">Đánh giá cao nhất</option><option value="price-asc">Giá thấp đến cao</option><option value="price-desc">Giá cao đến thấp</option></select></div></div></div>
+      <div class="row g-4" data-shop-grid></div>
+    </div></section>
+  </main>
+  <div class="floating-actions"><button class="bubble-btn d-none" type="button" data-back-top><i class="bi bi-arrow-up"></i></button></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script><script src="../assets/js/main.js"></script><script src="../assets/js/pages/shop.js"></script>
+  <script src="../assets/js/design-system.js"></script>
+</body>
+</html>
+
+

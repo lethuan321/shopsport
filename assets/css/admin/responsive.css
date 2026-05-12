@@ -1,0 +1,49 @@
+@media (max-width: 1199.98px) {
+  .admin-shell {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+}
+
+@media (max-width: 991.98px) {
+  .admin-shell {
+    display: block;
+  }
+
+  .admin-sidebar {
+    position: fixed;
+    inset: 0 auto 0 0;
+    z-index: 1040;
+    width: 280px;
+    transform: translateX(-100%);
+  }
+
+  .admin-sidebar.is-open {
+    transform: translateX(0);
+  }
+
+  .admin-main {
+    padding: 12px;
+  }
+
+  .analytics-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .admin-content {
+    padding-top: 16px;
+  }
+
+  .admin-card {
+    border-radius: 18px;
+  }
+
+  .traffic-item {
+    grid-template-columns: 1fr;
+  }
+
+  .analytics-summary {
+    grid-template-columns: 1fr;
+  }
+}

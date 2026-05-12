@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "productId": 1,
+    "user": "Demo User",
+    "rating": 5,
+    "comment": "Comfortable for daily training."
+  }
+]
