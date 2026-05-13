@@ -46,6 +46,13 @@
 
   const loadProducts = async () => {
     try {
+      // Khi mở bằng file://, fetch file JSON thường bị chặn bởi CORS policy.
+      // Tự động fallback để tránh lỗi console “!”.
+      if (location.protocol === 'file:') {
+        products = PRODUCTS_FALLBACK;
+        return;
+      }
+
       const res = await fetch('../data/products.json');
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       products = await res.json();
@@ -76,7 +83,16 @@
 
   const createFloatingActions = () => {
     if (document.querySelector('.floating-actions')) return;
-    const contactHref = window.location.pathname.includes('/admin/') || window.location.pathname.includes('\\admin\\') ? '../pages/contact.html' : 'contact.html';
+
+    const isAdminPath = window.location.pathname.includes('/admin/') || window.location.pathname.includes('\\admin\\');
+    const isPagesPath = window.location.pathname.includes('/pages/') || window.location.pathname.includes('\\pages\\');
+
+    const contactHref = isAdminPath
+      ? '../pages/contact.html'
+      : isPagesPath
+        ? 'contact.html'
+        : 'pages/contact.html';
+
     document.body.insertAdjacentHTML('beforeend', `
       <div class="floating-actions">
         <button class="bubble-btn d-none" type="button" data-back-top aria-label="Lên đầu trang"><i class="bi bi-arrow-up"></i></button>
@@ -330,6 +346,3 @@
 })();
 
 document.addEventListener('DOMContentLoaded', SportStore.init);
-
-
-
